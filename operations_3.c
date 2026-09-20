@@ -22,16 +22,16 @@ int	swappy(t_list **head)
 	return (1);
 }
 
-int	pushy(t_list **head_add, t_list **head_del)
+int	pushy(t_list **dest, t_list **src)
 {
 	t_list	*node_del;
 
-	if (!head_del || !*head_del)
+	if (!src || !*src)
 		return (0);
-	node_del = *head_del;
-	*head_del = node_del->next;
-	node_del->next = *head_add;
-	*head_add = node_del;
+	node_del = *src;
+	*src = node_del->next;
+	node_del->next = *dest;
+	*dest = node_del;
 	return (1);
 }
 
