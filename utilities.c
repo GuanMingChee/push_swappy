@@ -1,5 +1,31 @@
 #include "push_swappy.h"
 
+int	check_len(t_list *head)
+{
+	int	len;
+
+	len = 0;
+	while (head)
+	{
+		head = head->next;
+		len++;
+	}
+	return (len);
+}
+
+int	is_sorted(t_list *head)
+{
+	if (!head)
+		return (1);
+	while (head->next)
+	{
+		if (head->val > (head->next)->val)
+			return (0);
+		head = head->next;
+	}
+	return (1);
+}
+
 double	compute_disorder(t_list *a)
 {
 	int		mistakes;
