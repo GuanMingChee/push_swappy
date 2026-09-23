@@ -1,5 +1,21 @@
 #include "push_swappy.h"
 
+int	check_dups()
+{
+	//return 1 if no dups, else 0
+	return (1);
+}
+
+int	chunky_size(int list_len)
+{
+	int	i;
+
+	i = 1;
+	while (i * i < list_len)
+		i++;
+	return (i - 1);
+}
+
 int	check_len(t_list *head)
 {
 	int	len;
