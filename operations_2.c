@@ -22,7 +22,7 @@ void	pa(t_list **a, t_list **b)
 		write(1, "pa\n", 3);
 }
 
-void	pb(t_list **b, t_list **a)
+void	pb(t_list **a, t_list **b)
 {
 	if (pushy(b, a))
 		write(1, "pb\n", 3);

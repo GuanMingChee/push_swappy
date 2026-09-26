@@ -4,6 +4,7 @@
 typedef struct node
 {
 	void		*val;
+	void		*idx;
 	struct node	*next;
 }	t_list;
 

@@ -1,6 +1,6 @@
 #include "push_swappy.h"
 
-int	check_dups()
+int	check_dups(t_list *iter)
 {
 	//return 1 if no dups, else 0
 	return (1);
